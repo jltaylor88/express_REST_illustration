@@ -55,3 +55,18 @@ export const updatePlayer = (req, res) => {
 	res.send(`Successfully updated the player with ID: ${id}`);
 };
 
+// Delete a player controller
+export const deletePlayer = (req, res) => {
+	const { id } = req.params;
+	const newPlayers = players.filter(player => player.id !== id);
+	if (newPlayers.length === players.length) {
+		res.send(
+			"No player was removed. Please check the ID of the player to delete. "
+		);
+	}
+
+	players = newPlayers;
+
+	res.send(`Successfully removed the player with ID: ${id}`);
+};
+

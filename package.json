@@ -1,0 +1,20 @@
+{
+	"name": "javascript_mastery_express_basic_clone",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"start": "nodemon index.js"
+	},
+	"keywords": [],
+	"author": "Jason Taylor",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.20"
+	}
+}
+

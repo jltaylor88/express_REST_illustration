@@ -1,9 +1,9 @@
 import express from "express";
-import { getPlayers } from "../controllers/players.js";
+import { getPlayer, getPlayers } from "../controllers/players.js";
 
 const router = express.Router();
 
 router.get("/", getPlayers);
-
+router.get("/:id", getPlayer);
 export default router;
 
